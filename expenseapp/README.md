@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:expenseapp/README.md
 # expenseapp
-========
-# quiz_app
->>>>>>>> 284d825b5f1150411e04a28e93931ae5464d78c2:README.md
 
 A new Flutter project.
 

@@ -1,11 +1,6 @@
 {
-<<<<<<<< HEAD:expenseapp/web/manifest.json
     "name": "expenseapp",
     "short_name": "expenseapp",
-========
-    "name": "quiz_app",
-    "short_name": "quiz_app",
->>>>>>>> 284d825b5f1150411e04a28e93931ae5464d78c2:web/manifest.json
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -27,11 +27,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   FlutterWindow window(project);
   Win32Window::Point origin(10, 10);
   Win32Window::Size size(1280, 720);
-<<<<<<<< HEAD:expenseapp/windows/runner/main.cpp
   if (!window.Create(L"expenseapp", origin, size)) {
-========
-  if (!window.Create(L"quiz_app", origin, size)) {
->>>>>>>> 284d825b5f1150411e04a28e93931ae5464d78c2:windows/runner/main.cpp
     return EXIT_FAILURE;
   }
   window.SetQuitOnClose(true);

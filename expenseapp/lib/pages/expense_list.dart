@@ -27,6 +27,19 @@ class _ExpenseListState extends State<ExpenseList> {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      children: [
+        Expanded(
+          child: ListView.builder(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            itemCount: expenses.length,
+            itemBuilder: (context, index) {
+              return Text(expenses[index].name);
+            },
+          ),
+        ),
+      ],
+    );
   }
 }

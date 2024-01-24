@@ -1,9 +1,5 @@
-<<<<<<<< HEAD:expenseapp/pubspec.yaml
 name: expenseapp
-========
-name: quiz_app
->>>>>>>> 284d825b5f1150411e04a28e93931ae5464d78c2:pubspec.yaml
-description: "A new Flutter project."
+description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -23,11 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-<<<<<<<< HEAD:expenseapp/pubspec.yaml
-  sdk: '>=3.2.3 <4.0.0'
-========
-  sdk: ">=3.2.3 <4.0.0"
->>>>>>>> 284d825b5f1150411e04a28e93931ae5464d78c2:pubspec.yaml
+  sdk: '>=3.1.4 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -43,7 +35,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  uuid: ^4.3.3
+  uuid: ^4.2.1
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:
@@ -68,13 +61,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-<<<<<<<< HEAD:expenseapp/pubspec.yaml
   # assets:
   #   - images/a_dot_burr.jpeg
-========
-  assets:
-    - assets/quiz-logo.png
->>>>>>>> 284d825b5f1150411e04a28e93931ae5464d78c2:pubspec.yaml
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
