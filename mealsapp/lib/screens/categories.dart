@@ -1,25 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:mealsapp/data/datas.dart';
-import 'package:mealsapp/models/category.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:mealsapp/providers/categories_provider.dart';
+import 'package:mealsapp/providers/filters_provider.dart';
+import 'package:mealsapp/providers/meals_provider.dart';
 import 'package:mealsapp/screens/favorites.dart';
 import 'package:mealsapp/screens/meal_list.dart';
 import 'package:mealsapp/widgets/category_card.dart';
+import 'package:mealsapp/widgets/custom_drawer.dart';
 
-class Categories extends StatelessWidget {
+class Categories extends ConsumerWidget {
   const Categories({Key? key}) : super(key: key);
 
-  void _selectCategory(BuildContext context, Category category) {
-    Navigator.of(context).push(MaterialPageRoute(
-      builder: (ctx) => MealList(
-        meals: meals
-            .where((element) => element.categoryId == category.id)
-            .toList(),
-      ),
-    ));
-  }
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final mealsFromState = ref.watch(mealsProvider);
+    final categoriesFromState = ref.watch(categoriesProvider);
     return Scaffold(
       appBar: AppBar(
         title: Text("Bir kategori seçin"),
@@ -32,20 +27,33 @@ class Categories extends StatelessWidget {
               icon: const Icon(Icons.favorite))
         ],
       ),
+      drawer: CustomDrawer(),
       body: GridView(
+        padding: const EdgeInsets.all(16),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
+            childAspectRatio: 1.5,
             crossAxisSpacing: 20,
-            mainAxisSpacing: 20,
-            childAspectRatio: 2),
+            mainAxisSpacing: 20),
         children: [
-          for (final category in categories)
+          for (final category in categoriesFromState)
             CategoryCard(
               category: category,
               onSelectCategory: () {
-                _selectCategory(context, category);
+                ref
+                    .read(selectedCategoryNameProvider.notifier)
+                    .seledtedCategoryNameChange(category);
+                ref
+                    .read(filterMealsProvider.notifier)
+                    .filteredMeals(category, mealsFromState);
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) =>
+                        MealList(meals: ref.watch(filterMealsProvider)),
+                  ),
+                );
               },
-            ),
+            )
         ],
       ),
     );

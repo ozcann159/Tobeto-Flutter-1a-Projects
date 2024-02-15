@@ -12,19 +12,49 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => onSelectCategory(),
       splashColor: Theme.of(context).primaryColor,
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        padding: EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(16)),
-          gradient: LinearGradient(colors: [
-            category.color.withOpacity(0.5),
-            category.color.withOpacity(0.9)
-          ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+      onTap: () => onSelectCategory(),
+      child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20.0),
         ),
-        child: Text(category.name),
+        elevation: 5,
+        shadowColor: Colors.white,
+        child: Container(
+          height: 150,
+          width: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0),
+            gradient: LinearGradient(
+              colors: [
+                category.color.withOpacity(0.9),
+                category.color.withOpacity(0.2),
+              ],
+              stops: const [0.2, 1.0],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.restaurant,
+                color: Colors.white,
+                size: 40,
+              ),
+              const SizedBox(height: 10),
+              Text(
+                category.name,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
