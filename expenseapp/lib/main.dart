@@ -14,16 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.light(
+        colorScheme: const ColorScheme.light(
           primary: Colors.orange, // Ana renk
           onPrimary: Colors.white, // Ana renk üzerindeki metin rengi
         ),
         // AppBar temaları
         appBarTheme: const AppBarTheme().copyWith(
           backgroundColor:
-              Color.fromARGB(255, 230, 107, 6), // AppBar'ın arkaplan rengi
+              const Color.fromARGB(255, 230, 107, 6), // AppBar'ın arkaplan rengi
           foregroundColor:
-              Color.fromARGB(255, 14, 60, 97), // AppBar üzerindeki metin rengi
+              const Color.fromARGB(255, 14, 60, 97), // AppBar üzerindeki metin rengi
         ),
 
         cardTheme: const CardTheme().copyWith(
