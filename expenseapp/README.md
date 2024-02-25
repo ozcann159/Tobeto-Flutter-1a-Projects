@@ -1,16 +1,11 @@
-# expenseapp
+# Expense App
 
-A new Flutter project.
+ExpenseApp, kişisel veya işle ilgili harcamalarınızı takip etmek,
+bütçenizi yönetmek ve finansal durumunuzu anlamak için tasarlanmış kullanıcı dostu bir uygulamadır. 
+Bu uygulama, harcamalarınızı kategorilere ayırmanıza, gelir ve giderleri izlemenize, aylık bütçe oluşturmanıza ve mali hedeflere ulaşmanıza yardımcı olur.
 
-## Getting Started
+## Ekran Görüntüleri
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Ekran Görüntüsü 1](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-06%20002028.png?raw=true)
+![Ekran Görüntüsü 2](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-06%20002006.png?raw=true)
+![Ekran Görüntüsü 3](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-06%20001952.png?raw=true)
