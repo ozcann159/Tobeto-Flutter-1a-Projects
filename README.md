@@ -6,9 +6,9 @@ Bu uygulama, harcamalarınızı kategorilere ayırmanıza, gelir ve giderleri iz
 
 ## Ekran Görüntüleri
 
-![Ekran Görüntüsü 1](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-20%20173233.png)
-![Ekran Görüntüsü 2](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-20%20173307.png)
-![Ekran Görüntüsü 3](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-20%20173332.png)
+![Ekran Görüntüsü 1](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-06%20002028.png?raw=true)
+![Ekran Görüntüsü 2](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-06%20002006.png?raw=true)
+![Ekran Görüntüsü 3](https://github.com/ozcann159/Tobeto-Flutter-1a-Projects/blob/master/expenseapp/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-02-06%20001952.png?raw=true)
 
 
 # Quiz App
